@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programacion Orientada a Objetos (POO)</title>
+</head>
+<body>
+
+    <script>
+
+        function  nombre  (nombre, edad, pais, sexo){
+            this.nombre = nombre;
+            this.edad = edad;
+            this.pais = pais;
+            this.sexo = sexo;
+
+        }
+
+        var madre = new nombre("sandra", 40, "Colombia", "F");
+        document.write(madre.nombre + "<br>")
+        var padre = new nombre("oscar", 35, "Colombia", "M");
+        document.write(padre.nombre + "<br>")
+
+     
+    </script>
+    
+</body>
+</html>

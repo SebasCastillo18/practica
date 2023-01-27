@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiempo</title>
+</head>
+<body>
+
+    <button id="btn">Detener</button>
+
+
+    <script>
+
+    //    var time =  function saludo(){
+    //         alert("hello World");
+    //     }
+    //     setTimeout(saludo,3000);
+
+
+
+
+
+        var time = setInterval(saludo,3000);
+
+        function saludo(){
+
+            alert("Hello world");
+        }
+
+        document.getElementById("btn").addEventListener("click",function(){
+            clearInterval(time);
+
+        });
+
+    </script>
+    
+</body>
+</html>

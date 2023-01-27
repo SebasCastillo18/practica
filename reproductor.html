@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+</head>
+<body>
+
+
+    <video src="video.mp4" width="600" id="video" controls>
+
+    </video>
+    <br><br>
+
+    <audio src="audio.mp3" controls></audio>
+
+    <br><br>
+
+    <button id="play-btn">Reproducir</button>
+    <button id="pause-btn">pausar</button>
+    <input type="range" id="volumen" value="1" min="0" max="1" step="0.1">
+
+
+    <script>
+
+        var video = document.getElementById("video"),
+            play = document.getElementById("play-btn"),
+            pause = document.getElementById("pause-btn"),
+            volumen = document.getElementById("volumen");
+
+
+            play.addEventListener("click", function(){
+                video.play();
+
+            });
+
+            pause.addEventListener("click", function(){
+                video.pause();
+
+            });
+
+            volumen.addEventListener("change", function(){
+                video.volume = volumen.value;
+
+            });
+    </script>
+    
+</body>
+</html>

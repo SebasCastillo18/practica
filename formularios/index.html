@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="contenedor">
+        <form action="" class="formulario" id="formulario" name="formulario">
+            <div class="content">
+                <input type="text" placeholder="Nombre" name="nombre" />
+                <input type="email" placeholder="Correo Electronico" name="correo" />
+
+                <div class="sexo">
+                    <input type="radio" name="genero" id="hombre" value="hombre" />
+                    <label for="hombre" class="radio-hombre">HOMBRE</label>
+                    <input type="radio" name="genero" id="mujer" value="mujer" />
+                    <label for="mujer" class="radio-mujer">MUJER</label>
+                </div>
+
+                <div class="terminos">
+                    <input type="checkbox" id="terminos" />
+                    <label for="terminos">Acepto terminos y condiciones</label>
+                </div>
+
+                <ul id="error"></ul>
+            </div>
+
+            <input type="submit" class="btn" value="REGISTRARSE" />
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

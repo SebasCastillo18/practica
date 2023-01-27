@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+
+<body>
+
+    <p id="time"></p>
+
+
+    <script>
+
+        function fecha() {
+
+            var time = new Date();
+
+            var p = document.getElementById("time");
+            p.innerHTML = time;
+        }
+
+        setInterval(fecha, 1000)
+
+        // var time = new Date();
+        // document.write(time);
+
+        // console.log(time.getHours());
+        // console.log(time.getMinutes());
+        // console.log(time.getSeconds());
+        // var days = ["Domingo", "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+        // console.log(days[time.getDay()]);
+        // console.log(time.getFullYear());
+    </script>
+
+</body>
+
+</html>
